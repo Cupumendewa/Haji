@@ -48,7 +48,7 @@ public class c_koneksi {
     }
     
     public static Connection setKoneksi() {        
-        String konString = "jdbc:mysql://localhost:3306/toko";          
+        String konString = "jdbc:mysql://localhost:3306/ta_haji";          
         Connection koneksi = null;          
         try {              
             Class.forName("com.mysql.jdbc.Driver");  
@@ -82,7 +82,7 @@ public class c_koneksi {
     public c_koneksi(){     
         try     
         {      
-            con =DriverManager.getConnection("jdbc:mysql://localhost:3306 /toko","root","");      
+            con =DriverManager.getConnection("jdbc:mysql://localhost:3306/ta_haji","root","");      
             st = con.createStatement();     
         }     
         catch (Exception a)     {     
